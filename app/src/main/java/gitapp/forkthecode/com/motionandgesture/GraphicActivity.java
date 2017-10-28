@@ -65,7 +65,7 @@ public class GraphicActivity extends AppCompatActivity {
                 //button.startAnimation(animation);
 
                 imageView.setMessage("Hello");
-                imageView.invalidate();
+
 
             }
         });

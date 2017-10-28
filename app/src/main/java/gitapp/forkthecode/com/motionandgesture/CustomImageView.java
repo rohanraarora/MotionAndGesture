@@ -36,6 +36,7 @@ public class CustomImageView extends AppCompatImageView {
 
     public void setMessage(String message) {
         this.message = message;
+        this.invalidate();
     }
 
     @Override
@@ -44,8 +45,8 @@ public class CustomImageView extends AppCompatImageView {
         if(message != null){
             Paint paint = new Paint();
             paint.setColor(Color.BLACK);
-            paint.setTextSize(2);
-            canvas.drawText(message,10,10,paint);
+            paint.setTextSize(128);
+            canvas.drawText(message,0,128,paint);
         }
 
     }
